@@ -14,6 +14,11 @@ namespace NetMobile.ViewModels
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
 
+        /// <summary>
+        /// Navigation is logik 
+        /// </summary>
+        public INavigation Navigation { get; set; }
+
         bool isBusy = false;
         public bool IsBusy
         {

@@ -4,7 +4,8 @@ using System.Text;
 
 namespace NetMobile.ViewModels
 {
-    class MemberEditViewModel
+    public class MemberEditViewModel : BaseViewModel
     {
+
     }
 }

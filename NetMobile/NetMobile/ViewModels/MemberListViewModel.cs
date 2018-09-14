@@ -43,10 +43,6 @@ namespace NetMobile.ViewModels
             }
         }
 
-        /// <summary>
-        /// Navigation is logik 
-        /// </summary>
-        public INavigation Navigation { get; set; }
 
         #endregion
 
@@ -54,6 +50,12 @@ namespace NetMobile.ViewModels
 
         public ICommand LoadUsersCommand { get; protected set; }
         private async Task ExecuteLoadUsers()
+        {
+
+        }
+
+        public ICommand OpenUserDetailsCommand { get; protected set; }
+        private async Task ExecuteOpenUserDetailsUsers()
         {
 
         }
@@ -68,15 +70,9 @@ namespace NetMobile.ViewModels
         {
             Users = new ObservableCollection<UserViewModel>(); // to load 
 
-            // Commands...
-
+            // Commands 
+            LoadUsersCommand = new Command(async () => await ExecuteLoadUsers());
         }
-
-        #endregion
-
-        #region Methods
-
-
 
         #endregion
 
