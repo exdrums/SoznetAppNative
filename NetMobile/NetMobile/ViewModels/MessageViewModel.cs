@@ -4,7 +4,7 @@ using System.Text;
 
 namespace NetMobile.ViewModels
 {
-    class MessageViewModel
+    public class MessageViewModel
     {
     }
 }
