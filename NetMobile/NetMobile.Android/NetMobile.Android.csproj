@@ -93,7 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NetMobile\NetMobile.csproj">
-      <Project>{93E762ED-9D33-49A6-B171-765723D558A0}</Project>
+      <Project>{070E5867-CFE6-410C-90A3-42E4614CB089}</Project>
       <Name>NetMobile</Name>
     </ProjectReference>
   </ItemGroup>

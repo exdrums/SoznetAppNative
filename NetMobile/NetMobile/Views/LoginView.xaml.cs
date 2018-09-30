@@ -11,11 +11,11 @@ using Xamarin.Forms.Xaml;
 namespace NetMobile.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class LoginPage : ContentPage
+	public partial class LoginView : ContentPage
 	{
-		public LoginPage ()
+		public LoginView ()
 		{
-			InitializeComponent ();
+			InitializeComponent();
             BindingContext = new LoginViewModel();
 		}
 	}

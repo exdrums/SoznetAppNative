@@ -16,6 +16,8 @@ namespace NetMobile.Services
 
         #region Settings Constants
 
+        private const string AccessToken = "access_token";
+        private readonly string AccessTokenDefault = string.Empty;
         private const string UserToken = "userToken";
         private readonly string UserTokenDefault = string.Empty;
         private const string BaseUrl = "baseUrl";
@@ -26,11 +28,18 @@ namespace NetMobile.Services
 
         #region Settings Properties
 
+        public string AuthAccessToken
+        {
+            get => GetValueOrDefault(AccessToken, AccessTokenDefault);
+            set => AddOrUpdateValue(AccessToken, value);
+        }
+
         public string AuthUserToken
         {
             get => GetValueOrDefault(UserToken, UserTokenDefault);
             set => AddOrUpdateValue(UserToken, value);
         }
+
 
         #endregion
 

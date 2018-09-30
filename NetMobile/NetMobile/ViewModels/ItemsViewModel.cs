@@ -2,8 +2,8 @@
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
+using NetMobile.ViewModels.Base;
 
 using NetMobile.Models;
 using NetMobile.Views;
@@ -17,7 +17,7 @@ namespace NetMobile.ViewModels
 
         public ItemsViewModel()
         {
-            Title = "Browse";
+            // Title = "Browse";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 

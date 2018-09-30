@@ -1,4 +1,5 @@
 ﻿using System;
+using NetMobile.ViewModels.Base;
 
 using NetMobile.Models;
 
@@ -9,7 +10,7 @@ namespace NetMobile.ViewModels
         public Item Item { get; set; }
         public ItemDetailViewModel(Item item = null)
         {
-            Title = item?.Text;
+            // Title = item?.Text;
             Item = item;
         }
     }

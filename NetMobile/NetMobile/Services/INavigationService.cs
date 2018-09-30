@@ -1,6 +1,5 @@
-﻿using System;
-using System.Threading.Tasks;
-using NetMobile.ViewModels;
+﻿using System.Threading.Tasks;
+using NetMobile.ViewModels.Base;
 
 namespace NetMobile.Services
 {

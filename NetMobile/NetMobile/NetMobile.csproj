@@ -13,4 +13,14 @@
     <PackageReference Include="Xamarin.Forms" Version="3.2.0.839982" />  
     <PackageReference Include="Acr.UserDialogs" Version="7.0.1" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\Base\" />
+    <Folder Include="Behaviors\" />
+    <Folder Include="Behaviors\Base\" />
+    <Folder Include="Validations\" />
+    <Folder Include="Effects\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\CustomNavigationView.cs" />
+  </ItemGroup>
 </Project>

@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
+using NetMobile.ViewModels.Base;
 
 namespace NetMobile.ViewModels
 {
